@@ -1,0 +1,2 @@
+# nvchad
+My nvchad config
