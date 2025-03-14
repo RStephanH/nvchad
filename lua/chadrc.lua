@@ -7,6 +7,8 @@ local M = {}
 
 M.base46 = {
 	theme = "gatekeeper",
+  --transparency = true,
+
 
 	hl_override = {
 		Comment = { italic = true },
@@ -19,6 +21,21 @@ M.ui = {
       tabufline = {
          lazyload = true
      }
+}
+M.ui = {
+ statusline = {
+   theme = "default",
+   separator_style = "round",
+ --   order = { "mode", "f", "git", "%=", "lsp_msg", "%=", "lsp", "cwd", "xyz", "abc" },
+ --   modules = {
+ --     abc = function()
+ --       return "hi"
+ --     end,
+ --
+ --     xyz =  "hi",
+ --     f = "%F"
+ --   }
+ },
 }
 
 return M
