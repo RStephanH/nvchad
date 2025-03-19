@@ -48,7 +48,7 @@ nvim_lsp.pyright.setup{
       analysis = {
         autoSearchPaths = true,
         diagnosticMode = "workspace",
-        useLivraryCodeForTypes = true,
+        useLibraryCodeForTypes = true,
         typeCheckingMode = "on"
       }
     }
@@ -68,5 +68,7 @@ nvim_lsp.html.setup{
       javascript = true
     }
   }
+}
+nvim_lsp.intelephense.setup{
 }
 
