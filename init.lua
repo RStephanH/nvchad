@@ -58,17 +58,17 @@ nvim_lsp.pyright.setup{
 -- nvim_lsp.tsserver.setup{} -- For TypeScript
 -- Set up the HTML language server
 
-nvim_lsp.html.setup{
-  cmd = { "html-languageserver", "--stdio" },
-  filetypes = { "html" },
-  init_options = {
-    configurationSection = { "html", "css", "javascript" },
-    embeddedLanguages = {
-      css = true,
-      javascript = true
-    }
-  }
-}
+-- nvim_lsp.html.setup{
+--   cmd = { "html-languageserver", "--stdio" },
+--   filetypes = { "html" },
+--   init_options = {
+--     configurationSection = { "html", "css", "javascript" },
+--     embeddedLanguages = {
+--       css = true,
+--       javascript = true
+--     }
+--   }
+-- }
 nvim_lsp.intelephense.setup{
 }
 
