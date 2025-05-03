@@ -35,17 +35,6 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
-
-vim.lsp.enable('markdown_oxide')
-
--- local nvim_lsp = require'lspconfig'
---
--- -- configuration for a language server ( bashls for Bash)
--- nvim_lsp.bashls.setup{}
---
---
--- -- You can add more language servers here
--- nvim_lsp.ts_ls.setup{} -- For TypeScript
 -- -- Set up the HTML language server
 --
 -- -- nvim_lsp.html.setup{
@@ -59,6 +48,3 @@ vim.lsp.enable('markdown_oxide')
 -- --     }
 -- --   }
 -- -- }
--- nvim_lsp.intelephense.setup{
--- }
---
