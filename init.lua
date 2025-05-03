@@ -38,40 +38,27 @@ end)
 
 vim.lsp.enable('markdown_oxide')
 
-local nvim_lsp = require'lspconfig'
-
--- configuration for a language server ( bashls for Bash)
-nvim_lsp.bashls.setup{}
-
-
---Set up pyright for Python
-nvim_lsp.pyright.setup{
-  setting = {
-    python = {
-      analysis = {
-        autoSearchPaths = true,
-        diagnosticMode = "workspace",
-        useLibraryCodeForTypes = true,
-        typeCheckingMode = "on"
-      }
-    }
-  }
-}
--- You can add more language servers here
-nvim_lsp.ts_ls.setup{} -- For TypeScript
--- Set up the HTML language server
-
--- nvim_lsp.html.setup{
---   cmd = { "html-languageserver", "--stdio" },
---   filetypes = { "html" },
---   init_options = {
---     configurationSection = { "html", "css", "javascript" },
---     embeddedLanguages = {
---       css = true,
---       javascript = true
---     }
---   }
+-- local nvim_lsp = require'lspconfig'
+--
+-- -- configuration for a language server ( bashls for Bash)
+-- nvim_lsp.bashls.setup{}
+--
+--
+-- -- You can add more language servers here
+-- nvim_lsp.ts_ls.setup{} -- For TypeScript
+-- -- Set up the HTML language server
+--
+-- -- nvim_lsp.html.setup{
+-- --   cmd = { "html-languageserver", "--stdio" },
+-- --   filetypes = { "html" },
+-- --   init_options = {
+-- --     configurationSection = { "html", "css", "javascript" },
+-- --     embeddedLanguages = {
+-- --       css = true,
+-- --       javascript = true
+-- --     }
+-- --   }
+-- -- }
+-- nvim_lsp.intelephense.setup{
 -- }
-nvim_lsp.intelephense.setup{
-}
-
+--
