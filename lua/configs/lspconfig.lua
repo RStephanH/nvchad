@@ -39,4 +39,4 @@ lspconfig.pyright.setup{
     }
   }
 }
---Set up bashls for bash
+
